@@ -1,4 +1,8 @@
 
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 header {
     background-color: burlywood;
     width: 100%;
@@ -15,21 +19,20 @@ header #header-section1 {
 }
 
 h1 {
+    
     min-width: 10%;
     background-color: burlywood;
     color: blanchedalmond;
     box-sizing: border-box;
     margin-left: 20px;
-    padding: 0, 50px, 0, 20px;
-    width: 15%;    
+    padding: 0, 50px, 0, 20px;   
     font-size: 60px;
     text-shadow: -2px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
     
     
 }
-main {
-    background-color: tan;
-}
+
+
 
 h2 {
     font-size: 45px;
@@ -37,6 +40,8 @@ h2 {
     text-align: center;
     padding: 30px 0px;
     background-color: tomato;
+    border-radius: 70px;
+    margin: 10px;
 }
 
 h1 span {
@@ -48,7 +53,6 @@ nav {
 }
 
 figure {
-    position: relative;
     margin-left: 30%;
 }
 
@@ -60,12 +64,10 @@ figure {
 
 #header-section1 ul {
     display: flex;
-    
-
-    
+        
 }
 
-nav ul li {
+#nav1 li {
     padding-right: 20px;
     font-size: 25px;
     display: inline;
@@ -73,19 +75,23 @@ nav ul li {
     
 }
 
-#header-section2{
+.nav:hover {
+    color: aqua;
+}
+
+#header-section2 {
     padding-bottom: 10px;
     
 }
 
 .nav2 {
     display: flex;
-    padding-left: 10px;
     justify-content: center;
 
 }
 
 .nav2 li {
+    display: inline;
     margin-left: 25px;
     font-size: 20px;
 }
@@ -97,4 +103,76 @@ nav ul li {
     font-weight: bold;
     display: inline-block;
     margin-right: 5px;
+}
+
+#parenting {
+   background-color: lightslategray;
+   border-radius: 20px;
+   
+   
+}
+
+#gavin-king {
+    
+    padding: 20px;
+    float: left;
+    width: 10%;
+    min-width: 80px;
+    max-width: 150px;
+    height: auto;
+    max-height: 175px;
+
+    
+    
+}
+
+#parenting p {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 175%;
+    padding-left: 20px;
+    
+}
+
+#float-left::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.questions-for-parents {
+    padding-bottom: 10px;
+    padding-left: min(300px, 40%);
+    list-style-type: upper-roman;
+    font-size: 150%;
+}
+
+#can-i-parent {
+    width: 50%;
+    min-width: 150px;
+    margin-left: 20px;
+    
+}
+
+#float-right img {
+    padding: 20px;
+    float: right;
+    width: 15%;
+    min-width: 100px;
+    max-width: 150px;
+    height: auto;
+    max-height: 175px;
+
+}
+
+#float-right::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
 }
